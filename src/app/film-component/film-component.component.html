@@ -1,0 +1,7 @@
+<div [routerLink]="['./movie/'+filmData.id]" routerLinkActive="active" class="filmComponent">
+    <div>
+        <img src="{{filmService.getImage(filmData.poster_path)}}" />
+        
+    </div>
+    <p>{{filmData.title}}</p>
+</div>
